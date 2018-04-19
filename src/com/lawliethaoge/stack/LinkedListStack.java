@@ -15,7 +15,7 @@ public class LinkedListStack<Item>{
         first =new Node();
         first.item = item;
         first.next = oldfirist;
-        N++;
+
     }
 
     public Item pop(){  //从栈顶删除元素
