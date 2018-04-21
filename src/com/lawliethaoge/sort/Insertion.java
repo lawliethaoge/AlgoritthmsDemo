@@ -22,7 +22,7 @@ public class Insertion {
     }
 
     public static void main(String[] args) {
-        long[] a = {1,5,2,67,31,53,674};
+        long[] a = {1, 5, 2, 67, 31, 53, 674};
         sort(a);
 
         for(long b: a){

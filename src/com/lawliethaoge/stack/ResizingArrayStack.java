@@ -4,6 +4,7 @@ import java.util.Iterator;
 
 /**
  * 下压（LIFO）栈（能够动态调整数组大小的实现）
+ *
  * @author hao@lawliet.com
  * @since 2018/4/19 16:09
  */
@@ -45,12 +46,12 @@ public class ResizingArrayStack<Item> implements Iterable<Item> {
         return new ReverseArrayIterator();
     }
 
-    private class ReverseArrayIterator implements Iterator<Item>{  //支持后进先出的迭代
+    private class ReverseArrayIterator implements Iterator<Item> {  //支持后进先出的迭代
         private int i = N;
 
         @Override
         public boolean hasNext() {
-            return i>0;
+            return i > 0;
         }
 
         @Override
